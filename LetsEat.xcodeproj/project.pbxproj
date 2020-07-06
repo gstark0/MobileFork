@@ -15,7 +15,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0DBA43DE24B2147400089AB5 /* MobileFork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileFork.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DBA43DE24B2147400089AB5 /* LetsEat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LetsEat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DBA43E124B2147400089AB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DBA43E324B2147400089AB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		0DBA43E824B2147400089AB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		0DBA43DF24B2147400089AB5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0DBA43DE24B2147400089AB5 /* MobileFork.app */,
+				0DBA43DE24B2147400089AB5 /* LetsEat.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,9 +67,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0DBA43DD24B2147400089AB5 /* MobileFork */ = {
+		0DBA43DD24B2147400089AB5 /* LetsEat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0DBA43F224B2147900089AB5 /* Build configuration list for PBXNativeTarget "MobileFork" */;
+			buildConfigurationList = 0DBA43F224B2147900089AB5 /* Build configuration list for PBXNativeTarget "LetsEat" */;
 			buildPhases = (
 				0DBA43DA24B2147400089AB5 /* Sources */,
 				0DBA43DB24B2147400089AB5 /* Frameworks */,
@@ -79,9 +79,9 @@
 			);
 			dependencies = (
 			);
-			name = MobileFork;
+			name = LetsEat;
 			productName = MobileFork;
-			productReference = 0DBA43DE24B2147400089AB5 /* MobileFork.app */;
+			productReference = 0DBA43DE24B2147400089AB5 /* LetsEat.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -99,7 +99,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0DBA43D924B2147400089AB5 /* Build configuration list for PBXProject "MobileFork" */;
+			buildConfigurationList = 0DBA43D924B2147400089AB5 /* Build configuration list for PBXProject "LetsEat" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0DBA43DD24B2147400089AB5 /* MobileFork */,
+				0DBA43DD24B2147400089AB5 /* LetsEat */,
 			);
 		};
 /* End PBXProject section */
@@ -287,7 +287,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stark.MobileFork;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LetsEat;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,7 +304,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stark.MobileFork;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = LetsEat;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -313,7 +313,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0DBA43D924B2147400089AB5 /* Build configuration list for PBXProject "MobileFork" */ = {
+		0DBA43D924B2147400089AB5 /* Build configuration list for PBXProject "LetsEat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0DBA43F024B2147900089AB5 /* Debug */,
@@ -322,7 +322,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0DBA43F224B2147900089AB5 /* Build configuration list for PBXNativeTarget "MobileFork" */ = {
+		0DBA43F224B2147900089AB5 /* Build configuration list for PBXNativeTarget "LetsEat" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0DBA43F324B2147900089AB5 /* Debug */,
