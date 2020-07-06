@@ -61,7 +61,7 @@
         <scene sceneID="SB9-P4-RKz">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="uvy-jY-2s9" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Explore" id="hYu-Gb-Igf"/>
+                    <tabBarItem key="tabBarItem" title="Explore" image="icon-explore-on" id="hYu-Gb-Igf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="t6W-RL-vYc">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -80,7 +80,7 @@
         <scene sceneID="67T-ZP-BKg">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="m4f-sM-dhr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Map" id="DIP-CS-4cL"/>
+                    <tabBarItem key="tabBarItem" title="Map" image="icon-map-on" id="DIP-CS-4cL"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WBS-zM-AgT">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
@@ -96,4 +96,8 @@
             <point key="canvasLocation" x="95.652173913043484" y="762.72321428571422"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icon-explore-on" width="35" height="23"/>
+        <image name="icon-map-on" width="16" height="22"/>
+    </resources>
 </document>
