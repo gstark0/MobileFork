@@ -12,6 +12,10 @@ class ExploreViewController: UIViewController, UICollectionViewDataSource, UICol
     
     @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBAction func unwindLocationCancel(segue:UIStoryboardSegue){
+        
+    }
+    
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath)
     -> UICollectionReusableView {
         let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,
