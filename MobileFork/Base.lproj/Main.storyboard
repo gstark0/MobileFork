@@ -49,7 +49,7 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="7" minimumInteritemSpacing="0.0" id="sMw-rr-x0n">
                                     <size key="itemSize" width="196" height="196"/>
-                                    <size key="headerReferenceSize" width="9" height="100"/>
+                                    <size key="headerReferenceSize" width="0.0" height="100"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="7" minY="7" maxX="7" maxY="7"/>
                                 </collectionViewFlowLayout>
@@ -61,7 +61,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="196" height="196"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" name="Demo Grey"/>
+                                        <color key="backgroundColor" name="LetsEat Dark Grey"/>
                                         <connections>
                                             <segue destination="K1e-QR-jQK" kind="show" id="Aad-I4-669"/>
                                         </connections>
@@ -71,14 +71,40 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ug5-7M-6dg">
-                                            <rect key="frame" x="329" y="35" width="59" height="30"/>
+                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MRP-lf-PAk">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                            <state key="normal" title="Location"/>
-                                            <connections>
-                                                <segue destination="Y5u-9e-rcg" kind="presentation" id="c7z-ai-d4P"/>
-                                            </connections>
-                                        </button>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04M-4e-RCM">
+                                                    <rect key="frame" x="8" y="45" width="294" height="37"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ug5-7M-6dg">
+                                                    <rect key="frame" x="310" y="50" width="96" height="25"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <state key="normal" image="btn-location"/>
+                                                    <connections>
+                                                        <segue destination="Y5u-9e-rcg" kind="presentation" id="c7z-ai-d4P"/>
+                                                    </connections>
+                                                </button>
+                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="evZ-As-fba">
+                                                    <rect key="frame" x="8" y="89" width="398" height="1"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <color key="backgroundColor" name="LetsEat Light Grey"/>
+                                                </view>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwW-l7-edg">
+                                                    <rect key="frame" x="8" y="24" width="398" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                                                    <color key="textColor" name="LetsEat Light Grey"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        </view>
                                     </subviews>
                                 </collectionReusableView>
                                 <connections>
@@ -130,7 +156,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" name="Demo Grey"/>
+                                        <color key="backgroundColor" name="LetsEat Dark Grey"/>
                                         <connections>
                                             <segue destination="RGc-U4-uUf" kind="show" id="B3m-fP-bDJ"/>
                                         </connections>
@@ -359,10 +385,14 @@
         </scene>
     </scenes>
     <resources>
+        <image name="btn-location" width="96" height="25"/>
         <image name="icon-explore-on" width="35" height="23"/>
         <image name="icon-map-on" width="16" height="22"/>
-        <namedColor name="Demo Grey">
+        <namedColor name="LetsEat Dark Grey">
             <color red="0.66699999570846558" green="0.66699999570846558" blue="0.66699999570846558" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LetsEat Light Grey">
+            <color red="0.68627450980392157" green="0.68627450980392157" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
