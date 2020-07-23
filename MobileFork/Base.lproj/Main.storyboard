@@ -71,41 +71,68 @@
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MRP-lf-PAk">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
-                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MRP-lf-PAk">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="10"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04M-4e-RCM">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="04M-4e-RCM">
                                                     <rect key="frame" x="8" y="45" width="294" height="37"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="37" id="wdi-dX-dML"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="40"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ug5-7M-6dg">
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ug5-7M-6dg">
                                                     <rect key="frame" x="310" y="50" width="96" height="25"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="96" id="Xet-Z5-WMI"/>
+                                                        <constraint firstAttribute="height" constant="25" id="zfM-La-fQf"/>
+                                                    </constraints>
                                                     <state key="normal" image="btn-location"/>
                                                     <connections>
                                                         <segue destination="Y5u-9e-rcg" kind="presentation" id="c7z-ai-d4P"/>
                                                     </connections>
                                                 </button>
-                                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="evZ-As-fba">
-                                                    <rect key="frame" x="8" y="89" width="398" height="1"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="evZ-As-fba">
+                                                    <rect key="frame" x="8" y="9" width="398" height="1"/>
                                                     <color key="backgroundColor" name="LetsEat Light Grey"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="1" id="D1R-SY-PXH"/>
+                                                    </constraints>
                                                 </view>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwW-l7-edg">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uwW-l7-edg">
                                                     <rect key="frame" x="8" y="24" width="398" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="21" id="Bgl-Wp-FNu"/>
+                                                    </constraints>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
                                                     <color key="textColor" name="LetsEat Light Grey"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="uwW-l7-edg" secondAttribute="trailing" constant="8" id="E1R-z6-5m6"/>
+                                                <constraint firstItem="Ug5-7M-6dg" firstAttribute="top" secondItem="uwW-l7-edg" secondAttribute="bottom" constant="5" id="F6t-R3-Usx"/>
+                                                <constraint firstItem="04M-4e-RCM" firstAttribute="top" secondItem="uwW-l7-edg" secondAttribute="bottom" id="Qrj-oL-GHm"/>
+                                                <constraint firstItem="evZ-As-fba" firstAttribute="leading" secondItem="MRP-lf-PAk" secondAttribute="leading" constant="8" id="XHc-gA-Fj6"/>
+                                                <constraint firstItem="uwW-l7-edg" firstAttribute="leading" secondItem="MRP-lf-PAk" secondAttribute="leading" constant="8" id="ZRO-iG-xfm"/>
+                                                <constraint firstAttribute="bottom" secondItem="evZ-As-fba" secondAttribute="bottom" id="a9R-6Y-f8r"/>
+                                                <constraint firstItem="04M-4e-RCM" firstAttribute="leading" secondItem="MRP-lf-PAk" secondAttribute="leading" constant="8" id="aIj-Ox-h15"/>
+                                                <constraint firstAttribute="trailing" secondItem="Ug5-7M-6dg" secondAttribute="trailing" constant="8" id="eAI-hc-nmI"/>
+                                                <constraint firstAttribute="trailing" secondItem="evZ-As-fba" secondAttribute="trailing" constant="8" id="k7u-4X-u2b"/>
+                                                <constraint firstItem="uwW-l7-edg" firstAttribute="top" secondItem="MRP-lf-PAk" secondAttribute="top" constant="24" id="rzC-Dg-JBf"/>
+                                                <constraint firstItem="Ug5-7M-6dg" firstAttribute="leading" secondItem="04M-4e-RCM" secondAttribute="trailing" constant="8" id="uvC-Ei-7Nd"/>
+                                            </constraints>
                                         </view>
                                     </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="bottom" secondItem="MRP-lf-PAk" secondAttribute="bottom" constant="90" id="mNY-zg-Qit"/>
+                                        <constraint firstAttribute="trailing" secondItem="MRP-lf-PAk" secondAttribute="trailing" id="vXW-Yi-brQ"/>
+                                        <constraint firstItem="MRP-lf-PAk" firstAttribute="leading" secondItem="DkN-2P-1sY" secondAttribute="leading" id="vwu-x7-AX5"/>
+                                        <constraint firstItem="MRP-lf-PAk" firstAttribute="top" secondItem="DkN-2P-1sY" secondAttribute="top" id="zab-Uz-F92"/>
+                                    </constraints>
                                 </collectionReusableView>
                                 <connections>
                                     <outlet property="dataSource" destination="61D-CK-S2Z" id="i0E-aN-nCg"/>
