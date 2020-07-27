@@ -54,7 +54,7 @@
                                     <inset key="sectionInset" minX="7" minY="7" maxX="7" maxY="7"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="exploreCell" id="wFr-SA-d6K">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="exploreCell" id="wFr-SA-d6K" customClass="ExploreCell" customModule="LetsEat" customModuleProvider="target">
                                         <rect key="frame" x="7" y="107" width="196" height="196"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="PZO-Rn-9sX">
@@ -98,6 +98,8 @@
                                         </collectionViewCellContentView>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <connections>
+                                            <outlet property="imgExplore" destination="o1z-Fb-My9" id="1ly-nw-O2E"/>
+                                            <outlet property="lblName" destination="4lP-CY-r6Q" id="6b1-y8-Hrr"/>
                                             <segue destination="K1e-QR-jQK" kind="show" id="Aad-I4-669"/>
                                         </connections>
                                     </collectionViewCell>
